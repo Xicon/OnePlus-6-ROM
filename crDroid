@@ -1,0 +1,39 @@
+hello，world
+
+这是关于crDroid ROM的刷机，crDroid是目前自定义功能最多的ROM，这是我作为首推的第三方ROM的原因之一。
+
+如果你有时间，可以看一下它（crdroid）的功能：https： //github.com/crdroidandroid/crdroid_features/blob/9.0/README.mkdn
+  
+准备工作：
+
+  准备你的系统：确认你的底包：基于Android Pie 安卓9的ROM，例如：氢系统的最新版本
+  
+  if {"如果是其他第三方的ROM或者还是官方的Android reo安卓8.1的话"}
+  else {"先刷入Android Pie安卓9刷入氢/氧统的稳定版"}
+  
+  氢系统官网下载链接：https：//www.h2os.com/download 
+  氧系统官网下载链接：https ：//www.oneplus.com/us 
+  
+  电脑（非必需，但建议，救砖用）
+  数据线（搭配电脑，非必需，建议使用官方的数据线）
+  一部OnePlus 6
+  
+  刷机工作：
+    第一步:
+    解锁（如果已经解锁的请看下一步）
+    
+    解锁工具包（需要进入 fastboot模式（关机状态下：电源键+音量加）：https://pan.baidu.com/s/1HZ1HNDVZdYax8h7NVMEUZw
+    一加全机型万能工具箱：https://pan.baidu.com/s/19xK2AzDpTj72XwCdnkgWsg
+    
+    第二步：
+    下载crDroid ROM：
+    2019年2月10号的crDroid ROM：https://pan.baidu.com/s/1UAsJJcQBZj7tcD1bvylb3A
+    
+    Magisk：
+    Magisk v18.0：https://pan.baidu.com/s/11TXGtUv3MNiCbSGlVMcrVA
+    
+    Gapps：
+    谷歌服务包：https://pan.baidu.com/s/1vq8RH6WILUXAcOQ1usZKBw
+    
+    第三步：
+    进入lins
