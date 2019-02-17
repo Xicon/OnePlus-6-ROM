@@ -1,8 +1,8 @@
 hello，world
 
-这是关于crDroid ROM的刷机，crDroid是目前自定义功能最多的ROM，这是我作为首推的第三方ROM的原因之一。
+	这是关于crDroid ROM的刷机，crDroid是目前自定义功能最多的ROM，这是我作为首推的第三方ROM的原因之一。
 
-如果你有时间，可以看一下它（crdroid）的功能：https： //github.com/crdroidandroid/crdroid_features/blob/9.0/README.mkdn
+	如果你有时间，可以看一下它（crdroid）的功能：https： //github.com/crdroidandroid/crdroid_features/blob/9.0/README.mkdn
   
 准备工作：
 
@@ -14,26 +14,86 @@ hello，world
   氢系统官网下载链接：https：//www.h2os.com/download 
   氧系统官网下载链接：https ：//www.oneplus.com/us 
   
-  电脑（非必需，但建议，救砖用）
+  电脑（非必需，救砖用）
   数据线（搭配电脑，非必需，建议使用官方的数据线）
   一部OnePlus 6
   
-  刷机工作：
-    第一步:
+刷机工作：
+第一步:
     解锁（如果已经解锁的请看下一步）
     
     解锁工具包（需要进入 fastboot模式（关机状态下：电源键+音量加）：https://pan.baidu.com/s/1HZ1HNDVZdYax8h7NVMEUZw
-    一加全机型万能工具箱：https://pan.baidu.com/s/19xK2AzDpTj72XwCdnkgWsg
+    一加全机型万能工具箱：https://pan.baidu.com/s/19xK2AzDpTj72XwCdnkgWsg（by千古风流帝）
     
-    第二步：
-    下载crDroid ROM：
+第二步：
+	下载文件:
+
+    ROM：
     2019年2月10号的crDroid ROM：https://pan.baidu.com/s/1UAsJJcQBZj7tcD1bvylb3A
     
-    Magisk：
+	TWRP:（可临时，可永久）
+	twrp-3.2.3-x_blu_spark_v9.86_op6:https://pan.baidu.com/s/191zKPvZh4p8YO4cuBAe8sQ
+    
+    Gapps：(可选)
+    谷歌服务包：https://pan.baidu.com/s/1vq8RH6WILUXAcOQ1usZKBw
+
+	Magisk：（可选）
     Magisk v18.0：https://pan.baidu.com/s/11TXGtUv3MNiCbSGlVMcrVA
     
-    Gapps：
-    谷歌服务包：https://pan.baidu.com/s/1vq8RH6WILUXAcOQ1usZKBw
-    
-    第三步：
-    进入lins
+第三步：
+    刷永久TWRP： 
+	手机进入Fastboot模式，连接电脑，双击文件“双击刷入临时TWRP.bat”（仅在安卓9Android Pie上正常运行，如果没反应请升级到安卓9 Android Pie）
+	进入TWRP时，顺着按钮右滑，进入主界面
+	if("看不懂英文")
+{
+	else{"点击Setting，点击“地球”图标，选择第一个语言中国，即可切换到简体中文"
+}
+	点击挂载（Mount），电脑传输TWRP文件到手机。
+	switch("电脑没有显示手机内存？")
+{
+	case 1: System.out.println("勾选Data")
+	case 2: System.out.println("点击Enable MTP")
+}
+	
+第四步：
+	查看分区：
+	点击重启（Rebkoot），查看Cueernt Slot：显示的是A还是B
+
+	if("是B分区")
+{
+	点击清除（Wipe）
+	清除以下：Dalvik / ART Cache（缓存）
+	System（系统）
+	Data（数据）
+	Intenal Storage（内置存储）
+	恢复出厂设置
+	再点击擦除数据
+	清除完成之后
+	切换到A区
+}	
+	else("是A分区")
+{
+	"点击切换到B分区，再进行上述B分区的操作
+	重启到REC（关机，进入Fastboot，音量键按两次，切换到Rec，按电源键进入）"
+}
+第五步：
+	刷机：
+	点击挂载（Mount），勾选数据（Data）
+	点击安装（Install）
+	选择要刷入的文件
+	ROM,（可选Magisk，谷歌服务包）
+	
+第六步：
+	清除：
+	点击清除（Wipe）
+	清除缓存（Dalvik/ART Cache）
+	恢复出厂（Swipe to Factory Reset）
+	重启
+	else if(System==Google){System.out.println("系统是Google开机界面就可以进入系统了")}
+	else if(System==H2OS||OOS){System.out.println（"是氢/氧开机界面，重新进入TWRP（电源键+音量下）||（电源键+音量上进入Fastboot模式，音量下按两次，再按电源键"）}
+	点击Reboot 点击Slot B，然后点击System
+	完成。
+
+
+
+
